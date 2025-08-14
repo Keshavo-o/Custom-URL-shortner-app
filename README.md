@@ -30,6 +30,7 @@ Response:
 Returns the user to the original URL based on the id.(can be used in our front end to redirect to the original url.
 
 ### 3. GET /url/analytics/:id
+Returns analytics for the url based on shortened url or its ID.
 
 ### 4. GET /url
 Retunrs object array of all urls in the database
@@ -56,14 +57,14 @@ Nanoid – For generating unique IDs
 ├── index.js        # App entry point
 └── connection.js   # MongoDB connection
 
-How to Run
+## How to Run
 
 Clone the repository:
 
 git clone <your-repo-url>
 
 
-Install dependencies:
+## Install dependencies:
 
 npm install
 
@@ -76,7 +77,7 @@ OR
 npm run dev(using nodemon)
 
 
-Test the API using Postman or any HTTP client.
+## Test the API using Postman or any HTTP client.
 
 ## MONGODB STRUCTURE
 <img width="1911" height="986" alt="image" src="https://github.com/user-attachments/assets/d5f82cdd-3260-442c-b761-cfb311738634" />
