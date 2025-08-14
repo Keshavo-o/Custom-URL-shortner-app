@@ -81,8 +81,3 @@ npm run dev(using nodemon)
 
 ## MONGODB STRUCTURE
 <img width="1911" height="986" alt="image" src="https://github.com/user-attachments/assets/d5f82cdd-3260-442c-b761-cfb311738634" />
-
-
-Visit http://localhost:3000/xyz123 → redirects to original URL.
-
-GET /url/analytics/xyz123 → see total click count.
