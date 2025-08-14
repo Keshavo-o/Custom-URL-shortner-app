@@ -32,6 +32,7 @@ async function handlegeturlbyid(req,res)
     const url_id = url_data._id;
     await url.findByIdAndUpdate(url_id, { click_count: url_data.click_count+1 } );
     return res.json({message: "URL fetched successfully", short_id: url_data.short_id, click_count: url_data.click_count});
+    //if you want to redirect here instead of returning a response as json -  you can use res.redirect(url_data.redirect_id)
 }
 async function giveanalytics(req,res)
 {
@@ -48,4 +49,5 @@ module.exports = {
     geturl,
     handlegeturlbyid,
     giveanalytics
+
 }
