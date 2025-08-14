@@ -17,6 +17,7 @@ Organized MVC structure for clean, maintainable code.
 ### 1. POST /url
 
 Generates a new short URL.
+
 Request Body:
 <img width="1367" height="491" alt="image" src="https://github.com/user-attachments/assets/bb8bb9e5-ee33-4f8b-9123-85499a62ddbf" />
 
