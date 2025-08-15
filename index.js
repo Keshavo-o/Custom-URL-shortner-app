@@ -1,6 +1,8 @@
 const express = require("express");
+const path = require("path")
 const {mongo_conn} = require("./mongoose_conn.js");
 const url_route = require("./routes/url.js");
+const staticroute = require("./routes/staticRoute.js");
 const app = express();
 const PORT = 3000;
 
@@ -9,7 +11,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 //middleware - request logger
 
-
+//setting paths for ejs
+app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
 //mongoDb conn
 mongo_conn("mongodb://localhost:27017/url_shortener")
   .then(() => {
@@ -20,9 +24,7 @@ mongo_conn("mongodb://localhost:27017/url_shortener")
   });
 
 //Home page
-app.get("/", (req, res) => {
-  res.send("Welcome to the URL Shortener API");
-});
+app.use("/", staticroute);
 
 app.use("/url", url_route);
 app.listen(PORT, () => {
