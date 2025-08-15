@@ -14,6 +14,9 @@ Track analytics — total clicks for each short link.
 Organized MVC structure for clean, maintainable code.
 
 ## API Routes
+## Main route - HTTP://localhost:3000
+This directs you to homepage
+
 ### 1. POST /url
 
 Generates a new short URL.
@@ -78,6 +81,8 @@ npm run dev(using nodemon)
 
 
 ## Test the API using Postman or any HTTP client.
+## Home Page
+<img width="1897" height="967" alt="image" src="https://github.com/user-attachments/assets/1138fab0-24ff-448e-a88f-6e03917a6892" />
 
 ## MONGODB STRUCTURE
 <img width="1911" height="986" alt="image" src="https://github.com/user-attachments/assets/d5f82cdd-3260-442c-b761-cfb311738634" />
