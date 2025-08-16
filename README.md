@@ -86,3 +86,7 @@ npm run dev(using nodemon)
 
 ## MONGODB STRUCTURE
 <img width="1911" height="986" alt="image" src="https://github.com/user-attachments/assets/d5f82cdd-3260-442c-b761-cfb311738634" />
+
+## I also applied two different types of authentication on this project:
+Statefull(using uuid model):https://github.com/Keshavo-o/Nodejs-authentication-from-scratch
+Stateless(using JWT tokens):https://github.com/Keshavo-o/JWT-stateless-authentication-in-Node-js
